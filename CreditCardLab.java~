@@ -1,0 +1,28 @@
+public class CreditCardLab{
+   
+  public boolean verify(int num){            //luhn check:
+    for(int i = num.length(); i >=0; i-=2){     //go from right to left, take all numbers in even spaces
+       
+    }
+        //multiply each number in an even spot by 2
+        //if it is >10 after multiplication, add the numbers in each spot (12 becomes 1+2 = 3) -subtract 9
+        //take sum of all the new numbers together
+
+
+        //from right to left, take all the numbers in odd places
+        //add all of the numbers in odd places together
+
+        //add sum of evens to sum of odds
+        //credit number is valid if sum modulus 10 = 0
+
+     
+  }
+  public int findType(int num){      //starting numbers:
+        //it is a mastercard if the first two numbers are between 51-55 
+        //it is a visa card if the first number is 4
+        //it is a discover card if the first four digits are 6011
+        //it is an american express card if the first two numbers are between 34-37
+        //it is a carte blanch/diners card if the first two numbers are 36 or 38 or the first three numbers are between 300-305
+
+  }
+}  //end of class
