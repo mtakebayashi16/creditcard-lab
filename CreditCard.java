@@ -1,4 +1,4 @@
-public class CreditCardLab{
+public class CreditCard{
   
   public boolean verify(String num){             //luhn check:
     int evens = 0, sum, odds = 0;
