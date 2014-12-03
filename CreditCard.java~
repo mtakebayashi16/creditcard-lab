@@ -7,12 +7,12 @@ public class CreditCard{
       evenPos = evenPos * 2;        //multiply each number in an even spot by 2
       if (evenPos >= 10)            //if it is >10 after multiplication, add the numbers in each spot (12 becomes 1+2 = 3) 
         evenPos = evenPos - 9;      //(so subtract 9 from #s greater than 10)
-      evens = evens + evenPos;             //take sum of all the new numbers together
+      evens =+ evenPos;             //take sum of all the new numbers together
     }
     
     for(int j = num.length()-1; j >=0; j-=2){      //from right to left, take all the numbers in odd places
       int oddPos = Integer.parseInt(num.substring(j,j+1));
-      odds = odds + oddPos;       //add all of the numbers in odd places together
+      odds =+ oddPos;       //add all of the numbers in odd places together
     }
     sum = evens + odds;     //add sum of evens to sum of odds
     if (num.length() < 13 || num.length() > 16)  //checks to make sure the card is a valid length (between 13-16)
