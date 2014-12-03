@@ -28,7 +28,7 @@ public class CreditCard{
       return 0;
     else if (Integer.parseInt(num.substring(0,2)) >= 51 && Integer.parseInt(num.substring(0,2)) <= 55)      //it is a mastercard if the first two numbers are between 51-55 
       return 1;
-    else if (Integer.parseInt(num.substring(0)) == 4)       //it is a visa card if the first number is 4
+    else if (Integer.parseInt(num.substring(0,1)) == 4)       //it is a visa card if the first number is 4
       return 2;
     else if (Integer.parseInt(num.substring(0,2)) >= 34 && Integer.parseInt(num.substring(0,2)) <= 37)      //it is an american express card if the first two numbers are between 34-37
       return 3;  
